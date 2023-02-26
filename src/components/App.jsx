@@ -37,7 +37,7 @@ export class App extends Component {
           />
         </Block>
 
-        <Block title={'Sections'}>
+        <Block title={'Statistics'}>
           {this.countTotalFeedback() !== 0 ? (
             <Statistics
               good={this.state.good}

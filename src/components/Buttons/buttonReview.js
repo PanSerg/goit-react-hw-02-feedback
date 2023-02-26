@@ -12,6 +12,6 @@ export const ReviewOptions = ({ onLeaveReview, options }) => (
 );
 
 ReviewOptions.propTypes = {
-    onLeaveReview: PropTypes.array.isRequired,
-    options: PropTypes.func.isRequired
+    onLeaveReview: PropTypes.func.isRequired,
+    options: PropTypes.array.isRequired
 };
