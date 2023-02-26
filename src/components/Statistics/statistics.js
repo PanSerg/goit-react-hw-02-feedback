@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export const Statistics = ({
   good,
-  normal,
+  neutral,
   bad,
   total,
   positivePercentage,
@@ -15,7 +15,7 @@ export const Statistics = ({
         <h3>Good: {good}</h3>
       </li>
       <li>
-        <h3>Normal: {normal}</h3>
+        <h3>Neutral: {neutral}</h3>
       </li>
       <li>
         <h3>Bad: {bad}</h3>
@@ -32,7 +32,7 @@ export const Statistics = ({
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,
-  normal: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
