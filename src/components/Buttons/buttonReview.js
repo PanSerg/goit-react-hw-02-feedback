@@ -1,14 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { ButtonFeedback } from "./button.styled";
+import { BtnOption } from "./button.styled";
 
 export const FeedbackOptions = ({ onLeaveReview, options }) => (
-    <section>
+    <BtnOption>
         {options.map((option, index) => (
-            <section type="button" onClick={onLeaveReview} key={index}>
+            <ButtonFeedback type="button" onClick={onLeaveReview} key={index}>
                 {option}
-            </section>
+            </ButtonFeedback>
         ))}
-    </section>
+    </BtnOption>
 );
 
 FeedbackOptions.propTypes = {

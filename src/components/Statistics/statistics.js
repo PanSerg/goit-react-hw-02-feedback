@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types'
-
+import { DataStat } from "./statistics.styled";
 
 export const Statistics = ({
   good,
@@ -10,7 +10,7 @@ export const Statistics = ({
   positivePercentage,
 }) => {
     return (
-    <section>
+    <DataStat>
       <li>
         <h3>Good: {good}</h3>
       </li>
@@ -26,7 +26,7 @@ export const Statistics = ({
       <li>
         <h3>Positive feedback: {positivePercentage}%</h3>
       </li>
-        </section>
+        </DataStat>
     );
 };
 
