@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Statistics } from './Statistics/statistics';
-import { ReviewOptions } from './Buttons/buttonReview';
+import { FeedbackOptions } from './Buttons/buttonReview';
 import { Notification } from './Notification/notification';
-import { Block } from './Block/blocks';
+import { Section } from './Block/blocks';
 
 export class App extends Component {
   state = {
@@ -31,13 +31,13 @@ export class App extends Component {
      const keys = Object.keys(this.state);
     return (
       <>
-        <Block title={'Please leave a feedback about our cafe'}>
-          <ReviewOptions onLeaveReview={this.handleIncrement}
+        <Section title={'Please leave a feedback about our cafe'}>
+          <FeedbackOptions onLeaveReview={this.handleIncrement}
             options={keys}
           />
-        </Block>
+        </Section>
 
-        <Block title={'Statistics'}>
+        <Section title={'Statistics'}>
           {this.countTotalFeedback() !== 0 ? (
             <Statistics
               good={this.state.good}
@@ -49,7 +49,7 @@ export class App extends Component {
           ) : (
             <Notification message="There is no feedback" />
           )}
-        </Block>
+        </Section>
       </>
     );
   }; 

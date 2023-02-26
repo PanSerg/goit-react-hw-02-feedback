@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const Block = ({ title, children }) => {
+export const Section = ({ title, children }) => {
     return (
         <div>
             <section>{title}</section>
@@ -10,7 +10,7 @@ export const Block = ({ title, children }) => {
     );
 };
 
-Block.propType = {
+Section.propType = {
     title: PropTypes.string.isRequired,
     children: PropTypes.object.isRequired
 };
